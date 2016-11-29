@@ -1,0 +1,170 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;}
+body,p,h1,ul,li{
+	margin:0;
+	padding:0;}
+body{
+	color:#FFF;
+	font-size:14px;
+	font-family:"微软雅黑","宋体";}
+img{
+	border-style:none;}
+a{
+	color:#CCC;
+	text-decoration:none;}
+a:hover{
+	color:#666;}
+	/*测试header是固定的
+div{
+	height:300px;}
+	*/
+#header{
+	width:100%;
+	height:54px;
+	background-color:#000;
+	position:fixed;
+	top:0;
+	left:0;}
+#logo{
+	width:149px;/*测试*/
+	height:54px;/*测试*/
+	/*background-color:red;测试*/
+	float:left;
+	margin-left:0;
+	margin-top:0;}
+#nav{
+	height:54px;/*测试内部li到时候再指定*/
+	width:530px;/*测试505-175=330*/
+	/*background-color:white;测试*/
+	float:left;
+	margin-top:0;
+	margin-left:25px;}
+li{
+	display:inline-block;
+	margin-left:10px;
+	margin-top:10px;
+	width:100px;
+	margin-top:20px;}
+#find{
+	height:54px;
+	width:110px;/*1340-1230*/
+	/*background-color:green;测试*/
+	float:right;
+	margin-top:10px;
+	margin-right:5px;}
+#search{
+	height:54px;
+	width:370px;/*1190-820*/
+	/*background-color:red;测试*/
+	float:right;
+	margin-top:3px;
+	margin-right:40px;/*1230-1190*/
+	background-image:url(../images/bg1.png);
+	background-repeat:no-repeat;}
+input{
+	width:250px;
+	height:30px;
+	border-color:#E7E7E7;
+	background-color:#E7E7E7;
+	float:left;
+	margin-left:20px;
+	margin-top:2px;}
+#img1{
+	margin-top:5px;
+	float:right;
+	margin-right:50px;
+	margin-top:5px;}
+#ad{
+	width:100%;
+	height:471px;/*测试*/
+	background-color:#CCC;
+	text-align:center;}
+#adimg{
+	width:1345px;/*与图片的尺寸一致*/
+	height:471px;/*与图片的尺寸一致*/
+	/*background-color:red;测试*/
+	margin:0 auto;
+	background-image:url(../images/NB%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91-%E9%A6%96%E9%A1%B5_02.png);
+	background-repeat:no-repeat;
+	/*
+	position:relative;
+	top:54px;
+	left:0;
+	*/
+	}
+#page{
+	height:15px;
+	width:100px;/*15*4+3*6*/
+	/*background-color:green;测试*/
+	position:relative;
+	top:450px;
+	left:633.5px;}
+#erweima{
+	width:100px;
+	height:100px;
+	position:fixed;}
+.circle{
+	width:15px;
+	height:15px;
+	border-radius:7.5px;
+	border:1px solid #FFF;
+	float:left;
+	margin-top:0;
+	margin-left:6px;}
+#conus{
+	width:1349px;/*图片有点长*/
+	height:48px;
+	margin:0 auto;
+	background-color:yellow;/*测试*/}
+#main{
+	width:100%;
+	/*height:1500px;测试*/
+	background-color:#CCC;}
+#center{
+	width:1095px;/*测试结果是有用的*/
+	/*height:1500px;测试*/
+	/*background-color:red;测试*/
+	margin:0 auto;}
+.product{
+	width:520px;
+	height:280px;
+	float:left;
+	margin-left:25px;
+	margin-bottom:25px;
+	background-color:yellow;/*测试*/}
+.bigproduct{
+	clear:both; 
+	width:1070px;
+	height:455px;
+	background-color:green;
+	margin-left:25px;}
+#footer{
+	margin-top:50px;}
+#help{
+	width:1095px;/*测试结果是有用的*/
+	/*height:1500px;测试*/
+	/*background-color:red;测试*/
+	margin:0 auto;
+	}
+
+.hdetail{
+	width:200px;
+	color:#000;
+	float:left;
+	margin-left:70px;
+	margin-bottom:30px;
+	}
+
+#cp{
+	width:1095px;
+	margin:0 auto;}
+p{
+	color:#000;}
+.p1{
+	width:200px;
+	color:#000;
+	float:left;
+	margin-left:150px;
+	}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="my">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="framwork/angular-1.4.0/angular.min.js"></script>
+    <script src="framwork/angular-1.4.0/angular-route.min.js"></script>
+    <script>
+        var app=angular.module("my",[]);
+        app.controller("one",function($scope){
+            $scope.types=[{
+                id:1,
+                realName:"单选题"
+            },{
+                id:2,
+                realName:"多选题"
+            }]
+            $scope.id=1
+            $scope.id1=$scope.types[0]
+            $scope.id2=1
+        })
+    </script>
+</head>
+<body ng-controller="one">
+<!--第一种:-->
+    {{id}}
+    <select ng-model="id">
+        <option value={{type.id}} ng-repeat="type in types">{{type.realName}}</option>
+    </select>
+<!--第二种-->
+<!--for将属性放进-->
+    {{id1.id}}
+    <select ng-model="id1" ng-options="type.realName for type in types"></select>
+<!--第三种-->
+    {{id2}}
+    <select ng-model="id2" ng-options="type.id as type.realName for type in types"></select>
+<!--
+    项目基本框架：
+    html+angular路由，浏览器地址有变化，并且能够拿到里面的参数
+    ?:$route.param
+    路径参数
+    /sub/a/0/$routeParams
+    过滤器
+        系统的
+        自定义的
+     服务
+        对象：属性方法
+        系统
+        自定义的：三种 factioy service provider
+     指令
+        系统
+        自定义
+            绑定事件：因为on-click不能拿到dom元素，所以用指令中的link阶段绑定事件，可以拿到element和$scope
+-->
+</body>
+</html>
